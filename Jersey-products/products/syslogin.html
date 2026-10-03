@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #0d1b3d;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Container box */
+    .login-container {
+      background-color: #ffffff;
+      width: 360px;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    /* Avatar image */
+    .avatar {
+      width: 90px;
+      height: 90px;
+      background-color: #d9e4ff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 20px auto;
+    }
+
+    .avatar img {
+      width: 60px;
+      height: 60px;
+    }
+
+    /* Welcome text */
+    h2 {
+      color: #001f54;
+      margin-bottom: 5px;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    p {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+
+    /* Input fields */
+    label {
+      display: block;
+      text-align: left;
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input:focus {
+      border-color: #001f54;
+    }
+
+    /* Forgot password */
+    .forgot {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+
+    .forgot a {
+      color: #001f54;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    .forgot a:hover {
+      text-decoration: underline;
+    }
+
+    /* Login button */
+    .login-btn {
+      width: 100%;
+      background-color: #001f54;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .login-btn:hover {
+      background-color: #002c80;
+    }
+
+    /* Register section */
+    .register {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .register a {
+      color: #001f54;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .register a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="avatar">
+      <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="User Avatar">
+    </div>
+    <h2>Welcome Back</h2>
+    <p>Please login to your account</p>
+
+    <form>
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Enter username" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter password" required>
+
+      <div class="forgot">
+        <a href="#">Forgot password?</a>
+      </div>
+
+      <button type="submit" class="login-btn">Login</button>
+
+      <div class="register">
+        Don’t have an account? <a href="#">Register</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

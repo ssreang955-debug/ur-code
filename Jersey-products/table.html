@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered Table Example</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f2f4f8;
+      display: flex;
+      justify-content: center; /* ចងកណ្ដាលអូរ */
+      align-items: center;     /* ចងកណ្ដាលឈរ */
+      height: 100vh;           /* ប្រើកម្ពស់ពេញអេក្រង់ */
+      margin: 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 60%;
+      background-color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      /* overflow: hidden; */
+    }
+
+    th, td {
+      text-align: center;
+      padding: 12px 15px;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+      /* text-transform: uppercase; */
+      /* letter-spacing: 1px; */
+    }
+
+    /* tr:nth-child(even) 
+      background-color: #f9f9f9;
+    } */
+
+    tr:hover {
+      background-color: #e0f7e0;
+      transition: 0.1s;
+    }
+
+    caption {
+      caption-side: top;
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>Student Information</caption>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Major</th>
+    </tr>
+    <tr>
+      <td>Long</td>
+      <td>20</td>
+      <td>IT</td>
+    </tr>
+    <tr>
+      <td>Sophat</td>
+      <td>21</td>
+      <td>Design</td>
+    </tr>
+    <tr>
+      <td>Rith</td>
+      <td>19</td>
+      <td>Business</td>
+    </tr>
+  </table>
+</body>
+</html>

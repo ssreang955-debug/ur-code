@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer {
+            background-color: blueviolet;
+            color: white;
+            padding: 40px 60px;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-logo img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .footer-logo h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .footer-section h3 {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .footer-section a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .contact p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="https://img.icons8.com/?size=48&id=BBhHIwJINbBl&format=png" alt="Logo">
+                <h2>Online Shop</h2>
+            </div>
+
+            <div class="footer-section">
+                <h3>PRODUCTS</h3>
+                <a href="#">Shirt</a>
+                <a href="#">Shoes</a>
+                <a href="#">Dress</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>LEGAL</h3>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Shipping</a>
+            </div>
+
+            <div class="footer-section contact">
+                <h3>CONTACT</h3>
+                <p>📍 Phnom Penh, Cambodia</p>
+                <p>📧 info@gmail.com</p>
+                <a href="tel:+85561540122">📞+855 61 54 01 22</a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
